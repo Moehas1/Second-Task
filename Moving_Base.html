@@ -67,6 +67,19 @@ background-color: #e7e7e7; color: black;
 &ensp;<button class="button" type="button">Left</button> &ensp; <button class="button" type="button">Stop</button> &ensp; <button class="button" type="button">Right</button>
 <br><br>
 &emsp;&emsp;&emsp;<button class="button2" type="button">Backward</button>
-
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "8c4a8362-22fc-4e6a-89b6-2825e6120e99", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "f007cfd6-b7c1-406b-bc4c-97a3c66f518b", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+    
 </body>
 </html>
